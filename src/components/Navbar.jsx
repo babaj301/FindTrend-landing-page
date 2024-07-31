@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import Logo from '../assets/logos-arrows/Vector.svg';
 import Hamburger from '../assets/logos-arrows/hamburger.svg';
@@ -36,8 +35,32 @@ const Navbar = () => {
   };
   return (
     <div>
-      <nav className="bg-black flex flex-row justify-between">
-        <img src={Logo} alt="" />
+      <nav className="bg-black flex justify-between items-center">
+        <div className="flex items-center  ">
+          <img src={Logo} alt="" />
+          <p className=" hidden md:inline-block md:text-white md:ml-2 md:font-semibold">
+            Findtrend
+          </p>
+        </div>
+
+        <div className=" hidden md:flex">
+          <ul className="text-white flex justify-evenly ">
+            {links.map((link) => {
+              return (
+                <li key={link.name} className="mr-2">
+                  <a href={link.path}>{link.name}</a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+
+        <div className="hidden md:flex">
+          <button className="text-white mr-4">Login</button>
+          <button className="px-4 py-1 mr-4 bg-white text-black rounded-xl hover:bg-grey ">
+            Register
+          </button>
+        </div>
 
         <button className="md:hidden" onClick={handleMenu}>
           {menuOpen ? (
@@ -53,7 +76,7 @@ const Navbar = () => {
       {menuOpen ? (
         <div></div>
       ) : (
-        <div className="flex-row text-center bg-black h-[60vh]">
+        <div className="flex-row text-center bg-black h-[60vh] md:hidden">
           <div>
             <ul className="text-white justify-evenly text-center">
               {links.map((link) => {
