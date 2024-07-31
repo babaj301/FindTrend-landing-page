@@ -55,7 +55,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="hidden md:flex">
+        <div className="hidden md:flex flex-row">
           <button className="text-white mr-4">Login</button>
           <button className="px-4 py-1 mr-4 bg-white text-black rounded-xl hover:bg-grey ">
             Register
@@ -63,7 +63,7 @@ const Navbar = () => {
         </div>
 
         <button className="md:hidden" onClick={handleMenu}>
-          {menuOpen ? (
+          {!menuOpen ? (
             <img src={Hamburger} alt="" />
           ) : (
             <img src={CloseIcon} alt="" />
@@ -73,10 +73,10 @@ const Navbar = () => {
 
       {/* Control for Hmaburger Menu */}
 
-      {menuOpen ? (
+      {!menuOpen ? (
         <div></div>
       ) : (
-        <div className="flex-row text-center bg-black h-[60vh] md:hidden">
+        <div className=" relative top-0 z-10 flex-row text-center bg-black h-[60vh] md:hidden">
           <div>
             <ul className="text-white justify-evenly text-center">
               {links.map((link) => {
@@ -97,6 +97,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
+          <div className="bg-black/30 absolute left-0 w-full h-screen"></div>
         </div>
       )}
     </div>
