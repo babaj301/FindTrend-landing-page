@@ -38,16 +38,16 @@ const Navbar = () => {
       <nav className="bg-black flex justify-between items-center">
         <div className="flex items-center  ">
           <img src={Logo} alt="" />
-          <p className=" hidden md:inline-block md:text-white md:ml-2 md:font-semibold">
+          <a className=" hidden md:inline-block md:text-white md:ml-2 md:font-semibold">
             Findtrend
-          </p>
+          </a>
         </div>
 
         <div className=" hidden md:flex">
           <ul className="text-white flex justify-evenly ">
             {links.map((link) => {
               return (
-                <li key={link.name} className="mr-2">
+                <li key={link.name} className="mx-4 hover:underline">
                   <a href={link.path}>{link.name}</a>
                 </li>
               );
@@ -57,7 +57,7 @@ const Navbar = () => {
 
         <div className="hidden md:flex flex-row">
           <button className="text-white mr-4">Login</button>
-          <button className="px-4 py-1 mr-4 bg-white text-black rounded-xl hover:bg-grey ">
+          <button className="px-4 py-1 mr-4 bg-white text-black rounded-full hover:bg-lime-400 hover:text-white text-center ">
             Register
           </button>
         </div>
@@ -71,7 +71,7 @@ const Navbar = () => {
         </button>
       </nav>
 
-      {/* Control for Hmaburger Menu */}
+      {/* Control for Hamburger Menu */}
 
       {!menuOpen ? (
         <div></div>
@@ -91,7 +91,7 @@ const Navbar = () => {
             <ul className="text-white flex-row justify-evenly text-center">
               <li className="mb-8">Login</li>
               <li className="mb-8">
-                <button className="px-6 py-2 bg-white text-black rounded-xl ">
+                <button className="px-6 py-2 bg-white text-black rounded-full  hover:bg-lime-400 hover:text-white text-center">
                   Register
                 </button>
               </li>

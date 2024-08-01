@@ -1,9 +1,8 @@
-import React from 'react';
 import Tag1 from '../assets/search-tags/tab1.svg';
 import Tag2 from '../assets/search-tags/tab2.svg';
 import Tag3 from '../assets/search-tags/tab3.svg';
 import Tag4 from '../assets/search-tags/tab4.svg';
-import Tag5 from '../assets/search-tags/tab5.svg';
+import CtaPointer from '../assets/logos-arrows/cta-arrow.svg';
 
 const Hero = () => {
   return (
@@ -15,7 +14,7 @@ const Hero = () => {
       /> */}
 
       <div className="pt-12 text-center">
-        <h1 className="text-white text-4xl md:text-6xl font-bold ">
+        <h1 className="text-white text-4xl md:text-6xl font-bold md:mt-12 ">
           Minimize your tabs.
         </h1>
         <h1 className="text-white text-4xl md:text-6xl font-bold ">
@@ -26,12 +25,12 @@ const Hero = () => {
         "
         >
           {/* Paragraphs */}
-          <div>
-            <p className="w-[80%] text-center m-auto">
+          <div className="md:mt-6">
+            <p className="w-[80%] text-center m-auto md:text-xl">
               Don’t let your computer memories consumes all of those browser
               tabs.
             </p>
-            <p className="w-[80%] text-center m-auto">
+            <p className="w-[80%] text-center m-auto md:text-xl">
               Findtrend let you gathers all of your favorite website into one
               place.
             </p>
@@ -39,18 +38,40 @@ const Hero = () => {
         </div>
 
         {/*  CTA Button */}
-        <div className="mb-4">
-          <button className="text-black bg-lime-400 pl-4 pr-2 py-2 text-sm font-bold rounded-2xl hover:bg-lime-200">
+        <div className="mb-4 md:mt-8 md:mb-12 md:flex md:flex-row md:justify-center  ">
+          <button className="text-black bg-lime-400 pl-4 pr-2 py-2 md:py-2 text-sm font-bold rounded-full hover:bg-lime-200 md:rounded-full md:h-10 md:ml-28 ">
             Get Started <span>🔥</span>
           </button>
+
+          <img
+            className="hidden md:inline-block md:align-text-top md:ml-2 "
+            src={CtaPointer}
+            alt=""
+          />
         </div>
 
         {/* Search Tags */}
-        <div className="flex flex-col justify-center items-center">
-          <img className="w-80 -rotate-2 hover:-rotate-6 " src={Tag4} alt="" />
-          <img className="w-80 rotate-3 hover:-rotate-6" src={Tag3} alt="" />
-          <img className="w-80 -rotate-2 hover:-rotate-6" src={Tag2} alt="" />
-          <img className="w-80 rotate-3 hover:-rotate-6 " src={Tag1} alt="" />
+        <div className="flex flex-col justify-center items-center md:flex-row md:mt-14 ">
+          <img
+            className="w-80 -rotate-2 hover:-rotate-6 md:-rotate-6 md:hover:-rotate-12 shadow-xl"
+            src={Tag4}
+            alt=""
+          />
+          <img
+            className="w-80 rotate-3 hover:-rotate-6 md:rotate-6 shadow-xl"
+            src={Tag3}
+            alt=""
+          />
+          <img
+            className="w-80 -rotate-2 hover:-rotate-6 md:-rotate-6 md:hover:-rotate-12 shadow-xl"
+            src={Tag2}
+            alt=""
+          />
+          <img
+            className="w-80 rotate-3 hover:-rotate-6 md:rotate-6 shadow-xl"
+            src={Tag1}
+            alt=""
+          />
         </div>
       </div>
     </div>
