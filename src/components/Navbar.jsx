@@ -56,7 +56,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex flex-row">
-          <button className="text-white mr-4">Login</button>
+          <button className="text-white mr-4 hover:underline">Login</button>
           <button className="px-4 py-1 mr-4 bg-white text-black rounded-full hover:bg-lime-400 hover:text-white text-center ">
             Register
           </button>

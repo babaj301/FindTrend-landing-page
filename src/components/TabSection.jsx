@@ -12,15 +12,19 @@ const TabSection = () => {
       </div>
 
       <div className=" flex md:flex md:flex-row md:justify-center justify-center mt-12">
-        <img className="h-12 md:h-20 self-center " src={leftArrow} alt="" />
+        <img
+          className="h-12 md:h-20 self-center hover:rotate-3 "
+          src={leftArrow}
+          alt=""
+        />
         <div className="bg-white rounded-xl">
           <img
-            className="my-4 ml-8 mr-8 w-60 md:my-12 md:w-80 md:mx-24 md:w-80"
+            className="my-4 ml-8 mr-8 w-60 md:my-12 md:w-80 md:mx-24 hover:rotate-6"
             src={Tag5}
             alt=""
           />
         </div>
-        <img className="h-12 md:h-20" src={rightArrow} alt="" />
+        <img className="h-12 md:h-20 hover:-rotate-3" src={rightArrow} alt="" />
       </div>
 
       <div className="md:mt-10 mt-12">
