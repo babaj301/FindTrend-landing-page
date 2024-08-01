@@ -23,8 +23,8 @@ const TabSection = () => {
         <img className="h-12 md:h-20" src={rightArrow} alt="" />
       </div>
 
-      <div className="md:mt-12 mt-12">
-        <p className="w-[80%] text-center m-auto md:text-xl md:w-[70%]">
+      <div className="md:mt-10 mt-12">
+        <p className="w-[80%] text-center m-auto md:text-xl md:w-[50%] md:mb-12 ">
           A solution for your browser tabs that doesn't make your device get
           slower over time. Gets easier and faster to discover a trend with just
           one tab.
