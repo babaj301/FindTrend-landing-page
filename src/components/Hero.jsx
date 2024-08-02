@@ -13,7 +13,7 @@ const Hero = () => {
         alt=""
       /> */}
 
-      <div className="pt-24 text-center">
+      <div className="pt-16 text-center">
         <h1 className="text-white text-3xl md:text-7xl font-bold md:mt-12  md:pb-2 ">
           Minimize your tabs.
         </h1>
