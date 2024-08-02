@@ -38,7 +38,10 @@ const Navbar = () => {
       <nav className="bg-black flex justify-between items-center">
         <div className="flex items-center  ">
           <img src={Logo} alt="" />
-          <a className=" hidden md:inline-block md:text-white md:ml-2 md:font-semibold">
+          <a
+            href="/"
+            className=" hidden md:inline-block md:text-white md:ml-2 md:font-semibold"
+          >
             Findtrend
           </a>
         </div>
@@ -76,12 +79,12 @@ const Navbar = () => {
       {!menuOpen ? (
         <div></div>
       ) : (
-        <div className=" relative top-0 z-10 flex-row text-center bg-black h-[60vh] md:hidden">
-          <div>
+        <div className=" absolute top-16 left-0 right-0 z-20 flex flex-row text-center justify-center items-center bg-black h-[60vh] md:hidden">
+          <div className="">
             <ul className="text-white justify-evenly text-center">
               {links.map((link) => {
                 return (
-                  <li key={link.name} className="mb-8 ">
+                  <li key={link.name} className="mb-8 hover:underline">
                     <a href={link.path}>{link.name}</a>
                   </li>
                 );
@@ -89,7 +92,7 @@ const Navbar = () => {
             </ul>
 
             <ul className="text-white flex-row justify-evenly text-center">
-              <li className="mb-8">Login</li>
+              <li className="mb-8 hover:underline">Login</li>
               <li className="mb-8">
                 <button className="px-6 py-2 bg-white text-black rounded-full  hover:bg-lime-400 hover:text-white text-center">
                   Register
@@ -97,7 +100,6 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="bg-black/30 absolute left-0 w-full h-screen"></div>
         </div>
       )}
     </div>

@@ -6,7 +6,7 @@ import CtaPointer from '../assets/logos-arrows/cta-arrow.svg';
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen bg-black relative z-20 top-0">
+    <div className="w-full h-screen bg-black ">
       {/* <img
         className="top-0 left-0 w-full h-screen object-cover"
         src={Background}
@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
 
         {/* Search Tags */}
-        <div className="flex flex-col justify-center items-center md:flex-row md:mt-14 ">
+        <div className="flex flex-col justify-center items-center md:flex-row md:mt-14 z-10 ">
           <img
             className="w-80 -rotate-2 hover:-rotate-6 md:-rotate-6 md:hover:-rotate-12 shadow-xl"
             src={Tag4}
