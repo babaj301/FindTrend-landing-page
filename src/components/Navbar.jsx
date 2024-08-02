@@ -35,7 +35,7 @@ const Navbar = () => {
   };
   return (
     <div className="bg-black">
-      <nav className="bg-black flex justify-between mx-6 items-center">
+      <nav className="bg-black flex justify-between mx-24 items-center">
         <div className="flex items-center  ">
           <img src={Logo} alt="" />
           <a

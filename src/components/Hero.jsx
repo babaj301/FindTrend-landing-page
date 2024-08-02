@@ -14,10 +14,10 @@ const Hero = () => {
       /> */}
 
       <div className="pt-24 text-center">
-        <h1 className="text-white text-3xl md:text-6xl font-bold md:mt-12 ">
+        <h1 className="text-white text-3xl md:text-7xl font-bold md:mt-12  md:pb-2 ">
           Minimize your tabs.
         </h1>
-        <h1 className="text-white text-3xl md:text-6xl font-bold ">
+        <h1 className="text-white text-3xl md:text-7xl font-bold  ">
           Find the trends!
         </h1>
         <div
