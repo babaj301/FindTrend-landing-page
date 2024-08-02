@@ -13,11 +13,11 @@ const Hero = () => {
         alt=""
       /> */}
 
-      <div className="pt-12 text-center">
-        <h1 className="text-white text-4xl md:text-6xl font-bold md:mt-12 ">
+      <div className="pt-24 text-center">
+        <h1 className="text-white text-3xl md:text-6xl font-bold md:mt-12 ">
           Minimize your tabs.
         </h1>
-        <h1 className="text-white text-4xl md:text-6xl font-bold ">
+        <h1 className="text-white text-3xl md:text-6xl font-bold ">
           Find the trends!
         </h1>
         <div
@@ -25,12 +25,12 @@ const Hero = () => {
         "
         >
           {/* Paragraphs */}
-          <div className="md:mt-6">
-            <p className="w-[80%] text-center m-auto md:text-xl">
+          <div className="mt-8 md:mt-10">
+            <p className="w-[80%] text-center text-sm m-auto md:text-xl">
               Don’t let your computer memories consumes all of those browser
               tabs.
             </p>
-            <p className="w-[80%] text-center m-auto md:text-xl">
+            <p className="w-[80%] text-center text-sm m-auto md:text-xl">
               Findtrend let you gathers all of your favorite website into one
               place.
             </p>
@@ -38,8 +38,8 @@ const Hero = () => {
         </div>
 
         {/*  CTA Button */}
-        <div className="mb-4 md:mt-8 md:mb-12 md:flex md:flex-row md:justify-center  ">
-          <button className="text-black bg-lime-400 pl-4 pr-2 py-2 md:py-2 text-sm font-bold rounded-full hover:bg-lime-200 md:rounded-full md:h-10 md:ml-28 ">
+        <div className="mb-10 mt-10 md:mt-8 md:mb-12 md:flex md:flex-row md:justify-center  ">
+          <button className="text-black bg-lime-400 pl-4 pr-2 py-2 md:py-2 text-sm font-bold rounded-full hover:bg-lime-500 md:rounded-full md:h-10 md:ml-28 ">
             Get Started <span>🔥</span>
           </button>
 
@@ -53,22 +53,22 @@ const Hero = () => {
         {/* Search Tags */}
         <div className="flex flex-col justify-center items-center md:flex-row md:mt-14 z-10 ">
           <img
-            className="w-80 -rotate-2 hover:-rotate-6 md:-rotate-6 md:hover:-rotate-12 shadow-xl"
+            className="w-72 -rotate-2 hover:-rotate-6 md:-rotate-6 md:hover:-rotate-12 shadow-xl"
             src={Tag4}
             alt=""
           />
           <img
-            className="w-80 rotate-3 hover:-rotate-6 md:rotate-6 shadow-xl"
+            className="w-72 rotate-3 hover:-rotate-6 md:rotate-6 shadow-xl"
             src={Tag3}
             alt=""
           />
           <img
-            className="w-80 -rotate-2 hover:-rotate-6 md:-rotate-6 md:hover:-rotate-12 shadow-xl"
+            className="w-72 -rotate-2 hover:-rotate-6 md:-rotate-6 md:hover:-rotate-12 shadow-xl"
             src={Tag2}
             alt=""
           />
           <img
-            className="w-80 rotate-3 hover:-rotate-6 md:rotate-6 shadow-xl"
+            className="w-72 rotate-3 hover:-rotate-6 md:rotate-6 shadow-xl"
             src={Tag1}
             alt=""
           />

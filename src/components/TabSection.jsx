@@ -4,7 +4,7 @@ import rightArrow from '../assets/logos-arrows/right-tab-arrow.svg';
 
 const TabSection = () => {
   return (
-    <div className="bg-lime-400/90 h-[60vh] w-full">
+    <div className="bg-lime-400 h-[60vh] w-full">
       <div className="flex flex-row justify-center">
         <h1 className="text-black text-4xl md:text-6xl font-bold mt-12 ">
           Open new tabs is sh*t
@@ -28,7 +28,7 @@ const TabSection = () => {
       </div>
 
       <div className="md:mt-10 mt-12">
-        <p className="w-[80%] text-center m-auto md:text-xl md:w-[50%] md:mb-12 ">
+        <p className="w-[70%] text-sm text-center m-auto md:text-xl md:w-[50%] md:mb-12 ">
           A solution for your browser tabs that doesn't make your device get
           slower over time. Gets easier and faster to discover a trend with just
           one tab.
