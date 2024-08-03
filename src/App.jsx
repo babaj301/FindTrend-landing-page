@@ -5,6 +5,7 @@ import LongText from './components/LongText';
 import Companies from './components/Companies';
 import Platforms from './components/Platforms';
 import Email from './components/Email';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Companies />
       <Platforms />
       <Email />
+      <Footer />
     </div>
   );
 }
