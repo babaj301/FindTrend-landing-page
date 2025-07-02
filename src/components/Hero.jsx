@@ -1,8 +1,8 @@
-import Tag1 from '../assets/search-tags/tab1.svg';
-import Tag2 from '../assets/search-tags/tab2.svg';
-import Tag3 from '../assets/search-tags/tab3.svg';
-import Tag4 from '../assets/search-tags/tab4.svg';
-import CtaPointer from '../assets/logos-arrows/cta-arrow.svg';
+import Tag1 from "../assets/search-tags/tab1.svg";
+import Tag2 from "../assets/search-tags/tab2.svg";
+import Tag3 from "../assets/search-tags/tab3.svg";
+import Tag4 from "../assets/search-tags/tab4.svg";
+import CtaPointer from "../assets/logos-arrows/cta-arrow.svg";
 
 const Hero = () => {
   return (
@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
 
         {/* Search Tags */}
-        <div className="flex flex-col justify-center items-center md:flex-row md:mt-14 z-10 ">
+        <div className="flex flex-col justify-center items-center lg:flex-row lg:mt-14 z-10 ">
           <img
             className="w-72 -rotate-2 hover:-rotate-6 md:-rotate-6 md:hover:-rotate-12 shadow-xl"
             src={Tag4}
