@@ -1,17 +1,16 @@
-import React from 'react';
-import Social1 from '../assets/social-media/social media8.svg';
-import Social2 from '../assets/social-media/social media7.svg';
-import Social3 from '../assets/social-media/social media6.svg';
-import Social4 from '../assets/social-media/social media5.svg';
-import Social5 from '../assets/social-media/social media4.svg';
-import Social6 from '../assets/social-media/social media3.svg';
-import Social7 from '../assets/social-media/social media2.svg';
-import Social8 from '../assets/social-media/social media1.svg';
+import React from "react";
+import Social1 from "../assets/social-media/social media8.svg";
+import Social2 from "../assets/social-media/social media7.svg";
+import Social3 from "../assets/social-media/social media6.svg";
+import Social4 from "../assets/social-media/social media5.svg";
+import Social5 from "../assets/social-media/social media4.svg";
+import Social6 from "../assets/social-media/social media3.svg";
+import Social7 from "../assets/social-media/social media2.svg";
+import Social8 from "../assets/social-media/social media1.svg";
 
-import Tweet1 from '../assets/tweets/tweet 1.svg';
-import Tweet2 from '../assets/tweets/tweet 2.svg';
-import Tweet3 from '../assets/tweets/tweet 3.svg';
-
+import Tweet1 from "../assets/tweets/tweet 1.svg";
+import Tweet2 from "../assets/tweets/tweet 2.svg";
+import { motion } from "framer-motion";
 const Platforms = () => {
   return (
     <div className="bg-gray-100 h-full w-full">
@@ -19,15 +18,43 @@ const Platforms = () => {
         All platforms connected to Findtrend
       </h1>
 
-      <div className="w-full flex flex-row gap-8 md:justify-evenly overflow-scroll">
-        <img src={Social1} alt="" />
-        <img src={Social2} alt="" />
-        <img src={Social3} alt="" />
-        <img src={Social4} alt="" />
-        <img src={Social5} alt="" />
-        <img src={Social6} alt="" />
-        <img src={Social7} alt="" />
-        <img src={Social8} alt="" />
+      <div className="overflow-hidden w-full bg-gray-100">
+        <motion.div
+          className="flex gap-12 w-full"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: 30, // slow and smooth
+            ease: "linear",
+          }}
+        >
+          {[
+            Social1,
+            Social2,
+            Social3,
+            Social4,
+            Social5,
+            Social6,
+            Social7,
+            Social8,
+            Social1,
+            Social2,
+            Social3,
+            Social4,
+            Social5,
+            Social6,
+            Social7,
+            Social8,
+          ].map((src, idx) => (
+            <img
+              key={idx}
+              src={src}
+              alt={`social-${idx}`}
+              className="h-16 w-full"
+            />
+          ))}
+        </motion.div>
       </div>
 
       <div className="mt-12 flex flex-row  justify-center mb-8">

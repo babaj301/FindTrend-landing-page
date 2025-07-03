@@ -1,6 +1,6 @@
-import Tag5 from '../assets/search-tags/tab5.svg';
-import leftArrow from '../assets/logos-arrows/left-tab-arrow.svg';
-import rightArrow from '../assets/logos-arrows/right-tab-arrow.svg';
+import Tag5 from "../assets/search-tags/tab5.svg";
+import leftArrow from "../assets/logos-arrows/left-tab-arrow.svg";
+import rightArrow from "../assets/logos-arrows/right-tab-arrow.svg";
 
 const TabSection = () => {
   return (
@@ -13,13 +13,13 @@ const TabSection = () => {
 
       <div className=" flex md:flex md:flex-row md:justify-center justify-center mt-12">
         <img
-          className="h-12 md:h-20 self-center hover:rotate-3 "
+          className="h-12 md:h-20 self-center hover:rotate-3  transition-transform duration-300"
           src={leftArrow}
           alt=""
         />
         <div className="bg-white rounded-xl">
           <img
-            className="my-4 ml-8 mr-8 w-60 md:my-12 md:w-80 md:mx-24 hover:rotate-6"
+            className="my-4 ml-8 mr-8 w-60 md:my-12 md:w-80 md:mx-24 hover:rotate-6 transition-transform duration-300"
             src={Tag5}
             alt=""
           />

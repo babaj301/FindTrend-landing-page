@@ -1,31 +1,31 @@
-import { useState } from 'react';
-import Logo from '../assets/logos-arrows/Vector.svg';
-import Hamburger from '../assets/logos-arrows/hamburger.svg';
-import CloseIcon from '../assets/logos-arrows/close.svg';
+import { useState } from "react";
+import Logo from "../assets/logos-arrows/Vector.svg";
+import Hamburger from "../assets/logos-arrows/hamburger.svg";
+import CloseIcon from "../assets/logos-arrows/close.svg";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const links = [
     {
-      name: 'About',
-      path: '/',
+      name: "About",
+      path: "/",
     },
     {
-      name: 'How it works',
-      path: '/',
+      name: "How it works",
+      path: "/",
     },
     {
-      name: 'Pricing',
-      path: '/',
+      name: "Pricing",
+      path: "/",
     },
     {
-      name: 'Solution',
-      path: '/',
+      name: "Solution",
+      path: "/",
     },
 
     {
-      name: 'Features',
-      path: '/',
+      name: "Features",
+      path: "/",
     },
   ];
 
@@ -35,7 +35,7 @@ const Navbar = () => {
   };
   return (
     <div className="bg-black">
-      <nav className="bg-black flex justify-between mx-12 md:mx-24 items-center">
+      <nav className="bg-black flex justify-between mx-12 py-4 md:mx-24 items-center">
         <div className="flex items-center  ">
           <img src={Logo} alt="" />
           <a
