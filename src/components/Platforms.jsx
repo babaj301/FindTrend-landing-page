@@ -20,7 +20,7 @@ const Platforms = () => {
 
       <div className="overflow-hidden w-full bg-gray-100">
         <motion.div
-          className="flex gap-12 w-full"
+          className="flex gap-12 w-max"
           animate={{ x: ["0%", "-50%"] }}
           transition={{
             repeat: Infinity,
