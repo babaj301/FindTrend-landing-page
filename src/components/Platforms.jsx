@@ -13,14 +13,14 @@ import Tweet2 from "../assets/tweets/tweet 2.svg";
 import { motion } from "framer-motion";
 const Platforms = () => {
   return (
-    <div className="bg-gray-100 h-full w-full">
+    <div className="bg-gray-100 h-full w-full ">
       <h1 className="text-4xl text-center font-bold pb-12 md:text-6xl pt-8 ">
         All platforms connected to Findtrend
       </h1>
 
       <div className="overflow-hidden w-full bg-gray-100">
         <motion.div
-          className="flex gap-12 w-max"
+          className="flex gap-12 w-full"
           animate={{ x: ["0%", "-50%"] }}
           transition={{
             repeat: Infinity,
@@ -46,12 +46,28 @@ const Platforms = () => {
             Social6,
             Social7,
             Social8,
+            Social1,
+            Social2,
+            Social3,
+            Social4,
+            Social5,
+            Social6,
+            Social7,
+            Social8,
+            Social1,
+            Social2,
+            Social3,
+            Social4,
+            Social5,
+            Social6,
+            Social7,
+            Social8,
           ].map((src, idx) => (
             <img
               key={idx}
               src={src}
               alt={`social-${idx}`}
-              className="h-16 w-full"
+              className="h-16 w-auto"
             />
           ))}
         </motion.div>
