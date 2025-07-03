@@ -40,7 +40,7 @@ const Hero = () => {
         "
         >
           {/* Paragraphs */}
-          <div className="mt-8 md:mt-10">
+          <div className="mt-8 md:mt-10 font-semibold">
             <p className="w-[80%] text-center text-sm m-auto md:text-xl">
               Don’t let your computer memories consumes all of those browser
               tabs.
@@ -54,7 +54,7 @@ const Hero = () => {
 
         {/*  CTA Button */}
         <div className="mb-10 mt-10 md:mt-8 md:mb-12 md:flex md:flex-row md:justify-center  ">
-          <button className="text-black bg-lime-400 pl-4 pr-2 py-2 md:py-2 text-sm font-bold rounded-full hover:bg-lime-500 md:rounded-full md:h-10 md:ml-28 ">
+          <button className="text-black bg-lime-400 pl-4 pr-2 py-2 md:py-2 text-sm font-semibold rounded-full hover:bg-lime-500 md:rounded-full md:h-10 md:ml-28 ">
             Get Started <span>🔥</span>
           </button>
 

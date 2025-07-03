@@ -28,7 +28,7 @@ const TabSection = () => {
       </div>
 
       <div className="md:mt-10 mt-12">
-        <p className="w-[70%] text-sm text-center m-auto md:text-xl md:w-[50%] md:mb-12 ">
+        <p className="w-[70%] text-sm font-semibold text-center m-auto md:text-xl md:w-[50%] md:mb-12 ">
           A solution for your browser tabs that doesn't make your device get
           slower over time. Gets easier and faster to discover a trend with just
           one tab.
